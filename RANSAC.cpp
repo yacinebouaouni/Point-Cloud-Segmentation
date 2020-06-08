@@ -61,14 +61,14 @@ std::unordered_set<int> Ransac(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, int ma
 
 
             }
-
+        }
             //After adding all the inliers we compare inliers to the best model which is inliersResult if it has bigger size we swap
             if (inliers.size() > inliersResult.size()) {
 
                 inliersResult = inliers;
 
             }
-        }
+        
 
     }
 
