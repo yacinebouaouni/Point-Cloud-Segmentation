@@ -5,7 +5,7 @@
 using std::cout;
 using std::cin;
 using std::endl;
-
+using std::vector;
 
 int main() {
 
@@ -22,7 +22,16 @@ int main() {
 	cout <<"The root is :(x,y)="<<"("<< tree->root->point[0] << "," << tree->root->point[1] <<")"<< endl;
 	cout << "The Right Node is :(x,y)=" << "(" << tree->root->Right->point[0] << "," << tree->root->Right->point[1] << ")" << endl;
 	cout <<"The Left Node is:(x,y) = " << "(" << tree->root->Left->point[0] << ", " << tree->root->Left->point[1] << ")" << endl;
+
+	std::vector<int> ids = tree->search({ -5.5,7 }, 1);
+	
+	cout << "The points are:" << endl;
+	for (int i : ids) {
+
+		cout << "(x,y)=" << points[i][0] << " , " << points[i][1] << endl;
+	}
 	
 	return 0;
 
 }
+
