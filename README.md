@@ -6,17 +6,19 @@
   - DistanceTol: (float) The maximum distance required in order to classify the point as inlier.
   - cloud :(pcl::pointCloud >XYZ>) The point cloud data object that holds the data.
   
-  These are some of the results i had :
+  **Results**:
   
-  ![](Images/RANSAC.PNG) ![](Images/RANSAC2.PNG)
+  |Line A|Line B|
+  |:---:|:---:|
+  |![](Images/RANSAC.PNG)|![](Images/RANSAC2.PNG)|
   
 ## RANSAC_PLANE.cpp :
 
   Contains RANSAC algorithm for 3D cloud data points.it takes the same parameters as RANSAC 
   
-  Results:
-    A|B
-    -|-
+  **Results:**
+   |Plane Horizontal view |Plane down view |
+   |:---:|:---:|
    ![](Images/RANSAC3D.PNG)|![](Images/RANSAC3D2.PNG)
    
    
@@ -28,6 +30,9 @@
   - An insert funtion to insert data to the tree.
   - A search function to find the Nodes within a distance threshold.
   
-    **Results** :  
+    **Results** :
     
-    ![](Images/kdt.PNG)
+    |Comparaison lines|Basic Search example|
+    |:---:|:---:|
+    |![](Images/kdt.PNG)|![](Images/kdtsearch.png)|
+    
